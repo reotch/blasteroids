@@ -1,0 +1,30 @@
+{
+  "name": "blasteroids",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html -p 8888",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reotch/blasteroids.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reotch/blasteroids/issues"
+  },
+  "homepage": "https://github.com/reotch/blasteroids#readme",
+  "dependencies": {
+    "kaboom": "^0.5.1"
+  },
+  "alias": {
+    "kaboom": "./node_modules/kaboom/dist/kaboom.mjs"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }
+}
