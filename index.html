@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://unpkg.com/kaboom@next/dist/kaboom.js"></script>
+    <script type="module">
+
+        // initialize kaboom context
+        kaboom({
+            global: true,
+            width: 640,
+            height: 480,
+            fullscreen: true,
+            // scale: 1,
+            debug: true,
+        });
+
+        loadSprite('heroShip', './assets/sprites/invasion_alien.bmp')
+        loadSprite('bg', './assets/sprites/bg.jpg')
+
+        // Background
+        add([
+            sprite('bg',
+            { 
+                width: width(), 
+                height: height(), 
+            }),
+        ])
+
+        // Player ship
+        const player = add([
+            sprite('heroShip'),
+            pos(50, 300),
+            area(),
+        ]);
+
+
+
+        // Fire!
+        keyPress("space", () => {
+            // hero.;
+        })
+
+    </script>
+</body>
+</html>
